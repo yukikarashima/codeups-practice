@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.section-title{
+    text-align: center;
+}
+
+.section-title__main{
+    line-height: 1;
+    font-family: $en-font-family;
+    font-size: rem(32);
+    font-weight: $normal;
+}
+
+.section-title__main::first-letter {
+    color: $blue;
+  }
+
+.section-title__sub{
+    line-height: 1;
+    font-size: rem(12);
+    margin-top: rem(4);
+    color: $blue;
+}
