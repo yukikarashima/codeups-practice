@@ -1,0 +1,35 @@
+@use "global" as *;
+
+.pc-header{
+    height: inherit;
+}
+
+.pc-header__inner{
+    height: inherit;
+}
+
+.pc-header__nav{
+    height: inherit;
+}
+
+.pc-header__items{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.pc-header__item{
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+.pc-header__item a{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 rem(20);
+
+}
+
