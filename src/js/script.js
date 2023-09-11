@@ -11,4 +11,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $('.sp-header').addClass('is-open')
         }
     })
+    var swiper = new Swiper(".js-mainSwiper", {
+        loop: true,
+        speed: 1000,
+        autoplay:{
+            delay: 3000
+        }
+    });
 });
+
