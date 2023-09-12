@@ -1,0 +1,41 @@
+@use "global" as *;
+
+
+.sp-footer__nav{
+    display: flex;
+    margin-top: rem(40);
+}
+
+.sp-footer__items:first-child{
+    margin-right: rem(16);
+}
+.sp-footer__item{
+    margin-bottom: rem(40);
+    font-size: rem(16);
+    color: $white;
+    font-weight: $bold;
+    line-height: 1.125;
+    position: relative;
+}
+
+.sp-footer__item a{
+    display: flex;
+}
+
+.sp-footer__icon{
+    display: block;
+    max-width: rem(18);
+    width: 100%;
+    margin-right: rem(4);
+}
+
+.sp-footer__subitems{
+    padding-left: rem(22);
+}
+.sp-footer__subitem{
+    margin-top: rem(24);
+    font-size: rem(16);
+    color: $white;
+    line-height: 1.125;
+    font-weight: $normal;
+}

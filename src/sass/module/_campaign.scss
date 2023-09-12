@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.campaign__inner{
+    margin-top: rem(120);
+    position: relative;
+}
+
+.campaign__slider{
+    margin-top: rem(28);
+}
+
+.campaign__item{
+    max-width: rem(280);
+    width: 100%!important;
+    margin-right: rem(24);
+    box-sizing: border-box;
+    @include mq("md") {
+    max-width: rem(333);
+    }
+}
+
+.campaign .swiper{
+    margin-right: calc(50% - 50vw);
+}
+
+.campaign .swiper-button-next,
+.campaign .swiper-button-prev{
+    top: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.campaign .swiper-button-next::after,
+.campaign .swiper-button-prev::after{
+    content: "";
+}
+
+.campaign .swiper-button-prev{
+    right: 15%;
+    left: auto;
+}
+.campaign .swiper-button-next{
+    right: 5%;
+    left: auto;}

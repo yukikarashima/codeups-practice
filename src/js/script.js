@@ -18,5 +18,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             delay: 3000
         }
     });
+
+
+    var swiper = new Swiper(".js-campaignSwiper", {
+    spaceBetween: 30,
+    slidesPerView: 1,
+    loop: true,
+    loopedSlides: 4,
+    width: 280,
+    allowTouchMove: false,
+    autoplay: {
+        delay: 2000
+    },
+    breakpoints: {
+    768: {
+        spaceBetween: 40,
+        width: 333
+    }
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+    }
+});
+
 });
 
