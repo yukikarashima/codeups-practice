@@ -64,8 +64,6 @@
 }
 .voice-card__img{
     aspect-ratio: 151/117;
-    position: relative;
-    display: block;
     max-width: rem(151);
     width: 100%;
     @include mq("md") {
@@ -76,7 +74,7 @@
 .voice-card__img img{
 	width: 100%;
 	height: 100%;
-
+    object-fit: cover;
 }
 
 .voice-card__text{
