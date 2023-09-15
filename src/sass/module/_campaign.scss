@@ -31,7 +31,7 @@
 
 .campaign .swiper-button-next,
 .campaign .swiper-button-prev{
-    top: rem(20);
+    top: rem(22);
     width: rem(80);
     height: rem(80);
 }
@@ -48,3 +48,10 @@
 .campaign .swiper-button-next{
     right: 2.2%;
     left: auto;}
+
+.campagin__button{
+    @include mq("md") {
+        margin-top: rem(2);
+        margin-left: rem(3);
+        }
+}

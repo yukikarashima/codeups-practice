@@ -13,7 +13,7 @@
     aspect-ratio: 301 / 138;
     content:"" ;
     @include mq("md") {
-        top: -17.5%;
+        top: -10.4%;
     }
 }
 
@@ -39,9 +39,19 @@
     margin-top: rem(47); 
     @include mq("md") {
         display: flex;
-        gap: rem(40);
+        flex-wrap: wrap;
         align-items: center;
         margin-top: rem(33);
+    }
+}
+.voice__item{
+    @include mq("md") {
+        margin-right: rem(40);
+    }
+}
+.voice__item:nth-child(2n){
+    @include mq("md") {
+        margin-right: 0;
     }
 }
 

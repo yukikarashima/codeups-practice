@@ -4,7 +4,7 @@
     padding: rem(17) rem(16) rem(15) rem(16);
     @include mq("md") {
         padding-top: rem(22);
-        padding-bottom: rem(26);
+        padding-bottom: rem(28);
     }
 }
 
@@ -73,8 +73,8 @@
 .campaign-price__normal::before{
     position: absolute;
     content: "";
-    border: solid rem(3) #C94800;
-    top: 50%;
+    border: solid rem(2) #C94800;
+    top: 47%;
     left: 0;
     right: 0;
     transform: translateY(-50%);

@@ -14,9 +14,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     var swiper = new Swiper(".js-mainSwiper", {
         loop: true,
         speed: 1000,
-        autoplay:{
-            delay: 3000
-        }
+        // autoplay:{
+        //     delay: 3000
+        // }
     });
 
 
@@ -27,9 +27,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loopedSlides: 4,
     width: 280,
     allowTouchMove: false,
-    autoplay: {
-        delay: 2000
-    },
+    // autoplay: {
+    //     delay: 2000
+    // },
     breakpoints: {
     768: {
         spaceBetween: 40,

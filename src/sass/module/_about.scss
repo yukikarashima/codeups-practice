@@ -23,11 +23,13 @@
     position: relative;  
     display: flex; 
     justify-content: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .about__left-image{
     aspect-ratio: 128/194;
-    max-width: rem(128);
+    max-width: 37%;
     width: 100%;
     position: inherit;
     @include mq("md") {
@@ -36,7 +38,7 @@
 }
 .about__right-image{
     aspect-ratio: 281/186;
-    max-width: rem(281);
+    max-width: 82%;
     width: 100%;
     margin-left: rem(-64);
     margin-top: rem(26);
@@ -58,7 +60,7 @@
         width: 100%;
         position: absolute;
         display: flex;
-        top: 18.3%;
+        top: 18.7%;
         right: 0;
         align-items: center;
         gap: rem(20);
@@ -91,7 +93,7 @@
         width: 100%;
         margin-right: rem(40);
         color: $white;
-        margin-top: rem(40);
+        margin-top: rem(35);
     }
 }
 
