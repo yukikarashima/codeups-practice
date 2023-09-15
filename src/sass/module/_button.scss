@@ -15,7 +15,7 @@
     width: 100%;
     content: "";
     background-color: transparent;
-    border: 1px solid $blue;
+    border: rem(1) solid $blue;
     padding: rem(26) 0;
     z-index: 9;
 }
@@ -32,7 +32,7 @@
     padding: rem(19) rem(0) rem(19) rem(38);
     position: relative;
     z-index: 10;
-    border: solid 1px $blue;
+    border: solid rem(1) $blue;
 }
 
 .button__link::before{
@@ -58,7 +58,7 @@
 }
 
 .button:hover:after{
-    border: 1px solid $blue;
+    border: rem(1) solid $blue;
 }
 
 .button__link::after {

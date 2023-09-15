@@ -20,14 +20,14 @@
     @include mq("md") {
         display: flex;
         flex-direction: row-reverse;
-        margin-left: -1px;
+        margin-left: rem(-1);
         justify-content: left;
     }
 }
 
 .price__title{
     @include mq("md") {
-        text-indent: -6px;
+        text-indent: rem(-6);
     }
 }
 
@@ -81,7 +81,7 @@
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.5;
-    border-bottom: 1px solid $blue;
+    border-bottom: rem(1) solid $blue;
     display: block;
     text-align: left;
     padding-bottom: rem(4);

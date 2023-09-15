@@ -13,7 +13,7 @@
     color: $blue;
     line-height: 1;
     padding: rem(8) rem(11);
-    border: 1px solid $blue;
+    border: rem(1) solid $blue;
     display: inline-block;
     @include mq("md") {
         padding: rem(10) rem(15); 
@@ -23,7 +23,7 @@
 .campaign-price__title{
     font-weight: $medium;
     line-height: 1.1;
-    border-bottom: 1px solid $blue;
+    border-bottom: rem(1) solid $blue;
     font-size: rem(16);
     margin-top: rem(9);
     padding-bottom: rem(8);
@@ -73,7 +73,7 @@
 .campaign-price__normal::before{
     position: absolute;
     content: "";
-    border: solid 3px #C94800;
+    border: solid rem(3) #C94800;
     top: 50%;
     left: 0;
     right: 0;

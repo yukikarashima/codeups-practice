@@ -32,8 +32,8 @@
 .campaign .swiper-button-next,
 .campaign .swiper-button-prev{
     top: rem(20);
-    width: 80px;
-    height: 80px;
+    width: rem(80);
+    height: rem(80);
 }
 
 .campaign .swiper-button-next::after,
