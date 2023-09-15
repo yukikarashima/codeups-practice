@@ -22,7 +22,30 @@
     display: flex;
     align-items: center;
     height: inherit;
+    position: relative;
 }
+
+.pc-header__item::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: rem(20);
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:$blue;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+.pc-header__item:hover::after {
+    transform: scale(1, 1);/*X方向にスケール拡大*/
+}
+
 .pc-header__item a{
     height: inherit;
     display: flex;

@@ -9,6 +9,9 @@
     font-family: $en-font-family;
     font-size: rem(32);
     font-weight: $normal;
+    @include mq("md") {
+        font-size: rem(40);
+    }
 }
 
 .section-title__main::first-letter {
@@ -18,8 +21,11 @@
 .section-title__sub{
     line-height: 1;
     font-size: rem(12);
-    margin-top: rem(4);
+    margin-top: rem(10);
     color: $blue;
+    @include mq("md") {
+        margin-top: rem(10.1);
+    }
 }
 
 .section-title__main--white{

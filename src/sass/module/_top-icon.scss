@@ -1,0 +1,41 @@
+@use "global" as *;
+.top-icon{
+    right: rem(15);
+    bottom: rem(55);
+    width: rem(48);
+    height: rem(48);
+    position: fixed;
+    content: "";
+    z-index: 999;
+    border: rem(1) solid $blue;
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background-color: $white;
+    cursor: pointer;
+    @include mq("md") {
+        right: rem(20);
+        bottom: rem(60);
+        width: rem(79);
+        height: rem(80);
+    }
+}
+
+.top-icon__arrow{
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    transform: translateY(-50%) translateX(-50%) skew(50deg);
+    border-bottom: rem(1) solid $blue;
+    border-right: rem(1) solid $blue;
+    height: rem(7);
+    max-width: rem(30);
+    width: 100%;
+    @include mq("md") {
+        top: 49%;
+        left: 45%;
+        height: rem(8);
+        max-width: rem(41);
+    }
+}
+
+

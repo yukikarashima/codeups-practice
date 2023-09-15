@@ -1,12 +1,18 @@
 @use "global" as *;
 
 .campaign__inner{
-    margin-top: rem(120);
+    margin-top: rem(44);
     position: relative;
+    @include mq("md") {
+        margin-top: rem(120);
+        }
 }
 
 .campaign__slider{
-    margin-top: rem(28);
+    margin-top: rem(32);
+    @include mq("md") {
+        margin-top: rem(44);
+        }
 }
 
 .campaign__item{
@@ -25,7 +31,7 @@
 
 .campaign .swiper-button-next,
 .campaign .swiper-button-prev{
-    top: 0;
+    top: rem(20);
     width: 80px;
     height: 80px;
 }
@@ -36,9 +42,9 @@
 }
 
 .campaign .swiper-button-prev{
-    right: 15%;
+    right: 16.4%;
     left: auto;
 }
 .campaign .swiper-button-next{
-    right: 5%;
+    right: 2.2%;
     left: auto;}

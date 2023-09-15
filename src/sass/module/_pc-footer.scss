@@ -4,7 +4,12 @@
 .pc-footer__nav{
     display: flex;
     margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(12);
+        padding-left: rem(7);
+    }
 }
+
 
 .pc-footer__items{
     margin-right: rem(120);

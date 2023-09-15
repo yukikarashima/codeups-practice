@@ -29,7 +29,7 @@
     font-family: $en-font-family;
     font-size: rem(14);
     line-height: 1;
-    padding: rem(19) rem(0) rem(19) rem(40);
+    padding: rem(19) rem(0) rem(19) rem(38);
     position: relative;
     z-index: 10;
     border: solid 1px $blue;
@@ -38,14 +38,19 @@
 .button__link::before{
     position: absolute;
     content: "";
-    top: 29%;
-    right: rem(40);
+    top: 37%;
+    right: 21%;
     max-width: rem(40);
     width: 100%;
-    height: rem(12);
+    height: rem(8);
     border-bottom: rem(1) solid $white;
     border-right: rem(1) solid $white;
     transform: skew(45deg);
+    @include mq("md") {
+        height: rem(7);
+        max-width: rem(40);
+        top: 38%;
+    }
 }
 .button__link:hover:before{
     border-bottom: rem(1) solid $blue;

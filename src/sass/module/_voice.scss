@@ -6,37 +6,42 @@
 
 .voice__icon-top{
     position: absolute;
-    top: -19%;
+    top: -19.9%;
     left: 7%;
     max-width: rem(301);
     width: 100%;
     aspect-ratio: 301 / 138;
     content:"" ;
+    @include mq("md") {
+        top: -17.5%;
+    }
 }
 
 .voice__icon-bottom{
     position: absolute;
-    bottom: -9%;
-    left: 83%;
-    max-width: rem(71);
+    bottom: -2%;
+    right: 12.3%;
+    max-width: rem(78);
     width: 100%;
-    aspect-ratio: 71 / 162;
+    aspect-ratio: 71 / 153;
     content:"" ;
 }
 
 .voice__inner{
-    margin-top: rem(80); 
+    margin-top: rem(88); 
     @include mq("md") {
-        margin-top: rem(140);
+        margin-top: rem(144);
+        padding-bottom: rem(63);
     }
 }
 
 .voice__items{
-    margin-top: rem(40); 
+    margin-top: rem(47); 
     @include mq("md") {
         display: flex;
         gap: rem(40);
         align-items: center;
+        margin-top: rem(33);
     }
 }
 
