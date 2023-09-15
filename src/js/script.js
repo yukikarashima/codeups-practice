@@ -25,12 +25,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     slidesPerView: 1,
     loop: true,
     loopedSlides: 4,
-    width: 280,
+    width: 238.92,
     allowTouchMove: false,
-    autoplay: {
-        delay: 2000
-    },
     breakpoints: {
+
+    374: {
+        spaceBetween: 30,
+        width: 280
+    },
     768: {
         spaceBetween: 40,
         width: 333

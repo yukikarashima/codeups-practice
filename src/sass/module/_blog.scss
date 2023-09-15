@@ -32,7 +32,6 @@
         top: 0;
         left: 0;
         right: 0;
-        padding-top: 50%;
         aspect-ratio: 1440/500;
         z-index: -1;
         background-image: url(../images/common/blog_bg.jpg);
@@ -60,6 +59,8 @@
 .blog__item{
     @include mq("md") {
         margin-right: rem(40);
+        max-width: calc(100%/3 - rem(80)/3);
+        width: 100%;
     }
 }
 .blog__item:nth-child(3n){

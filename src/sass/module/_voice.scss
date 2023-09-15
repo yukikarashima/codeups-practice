@@ -46,6 +46,8 @@
 }
 .voice__item{
     @include mq("md") {
+        max-width: calc(100%/2 - rem(40)/2);
+        width: 100%;
         margin-right: rem(40);
     }
 }
