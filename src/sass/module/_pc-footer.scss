@@ -31,6 +31,9 @@
 .pc-footer__item a{
     display: flex;
 }
+.pc-footer__item a:hover{
+    opacity: 0.6;
+}
 
 .pc-footer__icon{
     display: block;

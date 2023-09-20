@@ -5,7 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="robots" content="noindex" />
   <!-- meta情報 -->
   <title>CodeUps</title>
   <meta name="description" content="" />
@@ -245,7 +244,6 @@
         <div class="main-view__title">DIVING</div>
         <div class="main-view__subtitle">into the ocean</div>
       </div>
-
     </div>
 
     <section class="campaign">
@@ -271,8 +269,7 @@
       </div>
       <div class="swiper js-campaignSwiper campaign__slider">
       <div class="swiper-wrapper campaign__items">
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign1.jpg" alt="キャンペーン画像">
             </figure>
@@ -294,12 +291,9 @@
                   ¥46,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign2.jpg" alt="キャンペーン画像">
             </figure>
@@ -321,12 +315,9 @@
                   ¥18,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign3.jpg" alt="キャンペーン画像">
             </figure>
@@ -348,12 +339,9 @@
                   ¥8,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign4.jpg" alt="キャンペーン画像">
             </figure>
@@ -375,12 +363,9 @@
                   ¥16,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign1.jpg" alt="キャンペーン画像">
             </figure>
@@ -402,12 +387,9 @@
                   ¥46,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign2.jpg" alt="キャンペーン画像">
             </figure>
@@ -429,12 +411,9 @@
                   ¥18,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign3.jpg" alt="キャンペーン画像">
             </figure>
@@ -456,12 +435,9 @@
                   ¥8,000
                 </p>
               </div>
-    
             </div>
-          </div>
         </a>
-        <a href="#" class="swiper-slide campaign__item">
-          <div class="price-card campaign__card">
+        <a href="#" class="swiper-slide campaign__item price-card">
             <figure class="price-card__img">
               <img src="assets/images/common/campaign4.jpg" alt="キャンペーン画像">
             </figure>
@@ -483,12 +459,9 @@
                   ¥16,000
                 </p>
               </div>
-    
-            </div>
           </div>
         </a>
       </div>
-
     </div>
     <div class="campagin__button">
       <div class="button">
@@ -515,10 +488,14 @@
         <div class="about__wrapper">
           <div class="about__image-area">
             <figure class="about__left-image">
-              <img src="assets/images/common/about_1.jpg" alt="屋根の上に乗ったシーサーの画像">
+              <picture>
+                <source srcset="assets/images/common/about_1.jpg" media="(min-width: 768px)" type="image/jpeg">
+                <img src="assets/images/common/about_1sp.jpg" alt="屋根の上に乗ったシーサーの画像">
+              </picture>
             </figure>
             <figure class="about__right-image">
-              <img src="assets/images/common/about_2.jpg" alt="2匹の魚が泳いでいる画像">
+              <source srcset="assets/images/common/about_2.jpg" media="(min-width: 768px)" type="image/jpeg">
+              <img src="assets/images/common/about_2sp.jpg" alt="2匹の魚が泳いでいる画像">
             </figure>
           </div>
           <div class="about__text-area">
@@ -586,7 +563,7 @@
       <figure class="blog__icon u-desktop">
         <img src="assets/images/common/fish_4.png" alt="魚群の画像">
       </figure>
-      <div class="blog__inner">
+      <div class="blog__inner inner">
         <div class="blog__section-title">
           <div class="section-title">
             <h2 class="section-title__main section-title__main--white">
@@ -597,10 +574,9 @@
             </p>
           </div>
         </div>
-
         <div class="blog__items">
-          <a href="#" class="blog__item">
-            <div class="blog-card">
+          <a href="#" class="blog-card">
+
               <div class="blog-card__img">
                 <img src="assets/images/common/blog_1.jpg" alt="珊瑚礁の画像">
               </div>
@@ -615,10 +591,10 @@
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
               </div>
-            </div>
+
           </a>
-          <a href="#" class="blog__item">
-            <div class="blog-card">
+          <a href="#" class="blog-card">
+
               <div class="blog-card__img">
                 <img src="assets/images/common/blog_2.jpg" alt="ウミガメの画像">
               </div>
@@ -633,10 +609,10 @@
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
               </div>
-            </div>
+
           </a>
-          <a href="#" class="blog__item">
-            <div class="blog-card">
+          <a href="#" class="blog-card">
+
               <div class="blog-card__img">
                 <img src="assets/images/common/blog_3.jpg" alt="カクレクマノミの画像">
               </div>
@@ -651,7 +627,7 @@
                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキスト
                 </p>
               </div>
-            </div>
+
           </a>
         </div>
         <div class="blog__button">
@@ -681,8 +657,7 @@
         </div>
         <div class="voice__wrapper">
           <div class="voice__items">
-            <a href="#" class="voice__item">
-              <div class="voice-card">
+            <a href="#" class="voice__item voice-card">
                 <div class="voice-card__top">
                   <div class="voice-card__left">
                     <div class="voice-card__sub">
@@ -709,10 +684,8 @@
                   ここにテキストが入ります。ここにテキストが入ります。
         
                 </p>
-              </div>
             </a>
-            <a href="#" class="voice__item">
-              <div class="voice-card">
+            <a href="#" class="voice__item voice-card">
                 <div class="voice-card__top">
                   <div class="voice-card__left">
                     <div class="voice-card__sub">
@@ -739,7 +712,6 @@
                   ここにテキストが入ります。ここにテキストが入ります。
         
                 </p>
-              </div>
             </a>
             </div>
           </div>
@@ -749,7 +721,6 @@
                 View more
               </a>
             </div>
-          </div>
         </div>
       </div>
       <figure class="voice__icon-bottom u-desktop">

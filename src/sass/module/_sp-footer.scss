@@ -4,6 +4,8 @@
 .sp-footer__nav{
     display: flex;
     margin-top: rem(40);
+    padding-right: rem(9);
+    justify-content: center;
 }
 
 .sp-footer__items:first-child{
@@ -16,6 +18,9 @@
     font-weight: $bold;
     line-height: 1.125;
     position: relative;
+}
+.sp-footer__item a:hover{
+    opacity: 0.7;
 }
 
 .sp-footer__item a{

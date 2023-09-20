@@ -2,6 +2,10 @@
 
 .voice{
     position: relative;
+    margin-top: rem(88); 
+    @include mq("md") {
+        margin-top: rem(144);
+    }
 }
 
 .voice__icon-top{
@@ -28,9 +32,8 @@
 }
 
 .voice__inner{
-    margin-top: rem(88); 
+    display: block;
     @include mq("md") {
-        margin-top: rem(144);
         padding-bottom: rem(63);
     }
 }
@@ -40,23 +43,35 @@
     @include mq("md") {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         margin-top: rem(33);
     }
 }
-.voice__item{
+
+.voice__item:first-child{
+    margin-top: 0;
+}
+
+.voice__item:nth-child(2){
     @include mq("md") {
-        max-width: calc(100%/2 - rem(40)/2);
-        width: 100%;
-        margin-right: rem(40);
+        margin-top: 0;
     }
 }
+
+.voice__item:nth-child(n + 3){
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
 .voice__item:nth-child(2n){
     @include mq("md") {
         margin-right: 0;
     }
 }
 
-.voice_button{
+.voice__button{
     margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
 }

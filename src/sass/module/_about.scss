@@ -2,9 +2,6 @@
 
 .about{
     position: relative;
-}
-
-.about__inner{
     margin-top: rem(88);
     @include mq("md") {
         margin-top: rem(144);

@@ -1,11 +1,14 @@
 @use "global" as *;
 
-.campaign__inner{
+.campaign{
     margin-top: rem(44);
-    position: relative;
     @include mq("md") {
         margin-top: rem(120);
         }
+}
+
+.campaign__inner{
+    position: relative;
 }
 
 .campaign__slider{
@@ -13,6 +16,10 @@
     @include mq("md") {
         margin-top: rem(44);
         }
+}
+
+.campaign__items{
+    padding-bottom: rem(10);
 }
 
 .campaign__item{
@@ -50,8 +57,9 @@
     left: auto;}
 
 .campagin__button{
+    margin-top: rem(30);
     @include mq("md") {
-        margin-top: rem(2);
+        margin-top: rem(70);
         margin-left: rem(3);
         }
 }

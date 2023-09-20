@@ -3,14 +3,16 @@
 .price{
     background-color: #DDF0F1;
     position: relative;
+    margin-top: rem(85);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
 }
 
 .price__inner{
-    margin-top: rem(85);
     padding-top: rem(84);
     padding-bottom: rem(85);
     @include mq("md") {
-        margin-top: rem(80);
         padding-top: rem(100);
         padding-bottom: rem(103);
     }
@@ -93,6 +95,7 @@
 
 .price__table-content{
     display: flex;
+    gap: 10px;
     justify-content: space-between;
 }
 
