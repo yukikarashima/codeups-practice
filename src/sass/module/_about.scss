@@ -29,8 +29,10 @@
     max-width: 37%;
     width: 100%;
     position: inherit;
+    margin-bottom: rem(17);
     @include mq("md") {
         max-width: rem(400);
+        margin-bottom: rem(58);
     }
 }
 .about__right-image{
@@ -46,8 +48,11 @@
     }
 }
 
-.about__image img{
+.about__left-image img,
+.about__right-image img{
 	width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about__text-area{
