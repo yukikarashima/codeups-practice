@@ -3,18 +3,11 @@
 .price{
     background-color: #DDF0F1;
     position: relative;
-    margin-top: rem(85);
-    @include mq("md") {
-        margin-top: rem(80);
-    }
-}
-
-.price__inner{
     padding-top: rem(84);
-    padding-bottom: rem(85);
+    padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(100);
-        padding-bottom: rem(103);
+        padding-bottom: rem(95);
     }
 }
 
@@ -76,7 +69,10 @@
 .price__table tr{
     max-width: 100%;
     width: 100%;
-
+    margin-top: rem(10);
+    @include mq("md") {
+        margin-top: rem(6);
+    }
 }
 
 .price__table-title th{
@@ -102,10 +98,8 @@
 .price__table tr td{
     font-size: rem(14);
     line-height: 1.4;
-    margin-top: rem(10);
     @include mq("md") {
         font-size: rem(16);
-        margin-top: rem(6);
         line-height: 1.5;
     }
 }
@@ -115,6 +109,7 @@
 }
 
 .price__button{
+    text-align: center;
     margin-top: rem(40);
     margin-left: rem(3);
     @include mq("md") {
@@ -126,7 +121,7 @@
 .price__icon{
     aspect-ratio: 441/201;
     bottom: 5%;
-    left: 7%;
+    left: calc(50% - min(rem(620), 43.1vw));
     max-width: rem(437);
     position: absolute;
     width: 100%;

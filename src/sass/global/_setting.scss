@@ -37,3 +37,8 @@ body {
   font-family: $ja-font-family;
   color: $black;
 }
+
+body.body-open{
+  height: 100%;
+  overflow: hidden;
+}

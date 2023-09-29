@@ -1,10 +1,9 @@
 @use "global" as *;
 
 .campaign-price{
-    padding: rem(17) rem(16) rem(15) rem(16);
+    padding: rem(17) rem(16) 0 rem(16);
     @include mq("md") {
         padding-top: rem(22);
-        padding-bottom: rem(28);
     }
 }
 
@@ -47,11 +46,13 @@
 .campaign-price__body{
     display: flex;
     align-items: center;
-    margin-top: rem(6);
-    padding: 0 rem(20);
+    padding-bottom: rem(15);
+    margin-top: auto;
+    justify-content: center;
     @include mq("md") {
         align-items: flex-end;
-        margin-top: rem(3);
+        padding-bottom: rem(28);
+        justify-content: center;
     }
 }
 

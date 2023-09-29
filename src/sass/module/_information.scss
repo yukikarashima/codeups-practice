@@ -2,17 +2,9 @@
 
 .information{
     background-color: #DDF0F1;
-    margin-top: rem(75);
-    @include mq("md") {
-        margin-top: rem(139);
-    }
-}
-
-.information__inner{
     padding-top: rem(83);
-    padding-bottom: rem(84);
+    padding-bottom: rem(80);
     @include mq("md") {
-        margin-top: rem(139);
         padding-top: rem(99);
         padding-bottom: rem(101);
     }
@@ -73,6 +65,7 @@
 }
 
 .information__button{
+    text-align: center;
     margin-top: rem(40);
     margin-left: rem(3);
     @include mq("md") {

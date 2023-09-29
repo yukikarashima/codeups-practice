@@ -61,6 +61,7 @@
     line-height: 1;
     padding: rem(8) rem(11);
     margin-top: rem(3);
+    margin-left: auto;
     display: inline-block;
     @include mq("md") {
         padding: rem(10) rem(15);
@@ -101,13 +102,5 @@
     line-height: 1.5;
     @include mq("md") {
         margin-top: rem(40);
-    }
-}
-
-.voice__button{
-    margin-top: rem(1);
-    margin-left: rem(3);
-    @include mq("md") {
-        margin-left: 0;
     }
 }

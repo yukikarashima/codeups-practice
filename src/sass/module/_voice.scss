@@ -2,16 +2,15 @@
 
 .voice{
     position: relative;
-    margin-top: rem(88); 
     @include mq("md") {
-        margin-top: rem(144);
+        padding-bottom: rem(63);
     }
 }
 
 .voice__icon-top{
     position: absolute;
     top: -19.9%;
-    left: 7%;
+    left: calc(50% - min(rem(620), 43.1vw));
     max-width: rem(301);
     width: 100%;
     aspect-ratio: 301 / 138;
@@ -24,7 +23,7 @@
 .voice__icon-bottom{
     position: absolute;
     bottom: -2%;
-    right: 12.3%;
+    right: calc(50% - min(rem(543), 38vw));
     max-width: rem(78);
     width: 100%;
     aspect-ratio: 71 / 153;
@@ -33,9 +32,6 @@
 
 .voice__inner{
     display: block;
-    @include mq("md") {
-        padding-bottom: rem(63);
-    }
 }
 
 .voice__items{
@@ -70,8 +66,10 @@
 }
 
 .voice__button{
+    text-align: center;
     margin-top: rem(40);
     @include mq("md") {
         margin-top: rem(80);
+        margin-left: 0;
     }
 }

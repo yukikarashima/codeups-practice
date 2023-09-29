@@ -5,18 +5,25 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(this).removeClass('is-open');
             $('.header').removeClass('is-open')
             $('.sp-header').removeClass('is-open')
+            $("body").removeClass("body-open");
         }else{
             $(this).addClass('is-open');
             $('.header').addClass('is-open')
             $('.sp-header').addClass('is-open')
+            $("body").addClass("body-open");
         }
-    })
+    });
+    
     var swiper = new Swiper(".js-mainSwiper", {
         loop: true,
         speed: 1000,
+        slidesPerView: 1,
+        loopedSlides: 4,
         autoplay:{
-            delay: 3000
-        }
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        effect: 'fade',
     });
 
 
@@ -28,7 +35,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     width: 238.92,
     allowTouchMove: false,
     autoplay:{
-        delay: 3000
+        delay: 3000,
+        disableOnInteraction: false
     },
     breakpoints: {
     374: {

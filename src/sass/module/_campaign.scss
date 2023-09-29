@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.campaign{
-    margin-top: rem(44);
-    @include mq("md") {
-        margin-top: rem(120);
-        }
-}
-
 .campaign__inner{
     position: relative;
 }
@@ -57,9 +50,10 @@
     left: auto;}
 
 .campagin__button{
-    margin-top: rem(30);
+    text-align: center;
+    margin-top: rem(35);
     @include mq("md") {
-        margin-top: rem(70);
+        margin-top: rem(74);
         margin-left: rem(3);
         }
 }
