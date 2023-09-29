@@ -16,17 +16,17 @@
     aspect-ratio: 301 / 138;
     content:"" ;
     @include mq("md") {
-        top: -17.6%;
+        top: -16.8%;
     }
 }
 
 .voice__icon-bottom{
     position: absolute;
-    bottom: -2%;
+    bottom: -1 %;
     right: calc(50% - min(rem(543), 38vw));
     max-width: rem(78);
     width: 100%;
-    aspect-ratio: 71 / 153;
+    aspect-ratio: 72 / 153;
     content:"" ;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .voice__items{
-    margin-top: rem(47); 
+    margin-top: rem(49); 
     @include mq("md") {
         display: flex;
         flex-wrap: wrap;
@@ -67,7 +67,8 @@
 
 .voice__button{
     text-align: center;
-    margin-top: rem(40);
+    margin-top: rem(39);
+    margin-left: rem(5);
     @include mq("md") {
         margin-top: rem(80);
         margin-left: 0;

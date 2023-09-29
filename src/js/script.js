@@ -34,10 +34,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     loopedSlides: 4,
     width: 238.92,
     allowTouchMove: false,
-    autoplay:{
-        delay: 3000,
-        disableOnInteraction: false
-    },
+    // autoplay:{
+    //     delay: 3000,
+    //     disableOnInteraction: false
+    // },
     breakpoints: {
     374: {
         spaceBetween: 30,

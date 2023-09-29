@@ -85,9 +85,12 @@
     position: relative;
     max-width: rem(295);
     width: 100%;
+    margin-top: rem(14);
+    box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.25);
     @include mq("md") {
         max-width: rem(273);
         aspect-ratio: 273 / 148 ;
+        margin-top: rem(0);
     }
 }
 
@@ -151,7 +154,7 @@
 
 .contact__button{
     text-align: center;
-    margin-top: rem(43);
+    margin-top: rem(41);
     margin-left: rem(3);
     @include mq("md") {
         margin-top: rem(41);
