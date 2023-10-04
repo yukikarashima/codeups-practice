@@ -14,6 +14,7 @@
     margin-top: rem(31);
     @include mq("md") {
         display: flex;
+        align-items: center;
         margin-top: rem(43);
     }
 }
@@ -38,11 +39,9 @@
 
 
 .information__content{
-    margin-top: rem(26);
     @include mq("md") {
         max-width: 45.5%;
         width: 100%;
-        margin-top: rem(61);
     }
 }
 
