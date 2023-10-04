@@ -22,7 +22,6 @@
 .campaign-price__title{
     font-weight: $medium;
     line-height: 1.1;
-    border-bottom: rem(1) solid $blue;
     font-size: rem(16);
     margin-top: rem(9);
     padding-bottom: rem(8);
@@ -35,23 +34,27 @@
     font-size: rem(14);
     line-height: 1;
     text-align: center;
-    margin-top: rem(13);
+    padding-top: rem(13);
+    border-top: rem(1) solid $blue;
+    width: 100%;
+    max-width: 100%;
     @include mq("md") {
         font-size: rem(16);
         text-indent: rem(-15);
-        margin-top: rem(19);
+        padding-top: rem(19);
     }
 }
 
 .campaign-price__body{
     display: flex;
     align-items: center;
-    padding-bottom: rem(20);
     margin-top: auto;
     justify-content: center;
+    padding: rem(0) rem(16) rem(20) rem(16);
+    flex-wrap: wrap;
     @include mq("md") {
         align-items: flex-end;
-        padding-bottom: rem(29);
+        padding: rem(0) rem(16) rem(29) rem(16);
         justify-content: center;
     }
 }
