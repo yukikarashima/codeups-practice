@@ -91,7 +91,7 @@
     padding-bottom: rem(4);
 }
 
-.price__table-title:nth-child(n + 2) th{
+.price__table tr.price__table-title:nth-child(n + 2){
     margin-top: rem(39);
     @include mq("md") {
         margin-top: rem(39.1);
