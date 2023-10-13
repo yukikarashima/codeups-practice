@@ -55,3 +55,23 @@
     padding: 0 min(rem(20), 1.39vw); 
 }
 
+.pc-header__link{
+    display: block;
+    height: inherit;
+    text-align: center;
+}
+
+.pc-header__main{
+    font-family: $en-font-family;
+    font-weight: $normal;
+    font-size: rem(18);
+    line-height: 1.2;
+    color: $white;
+}
+.pc-header__sub{
+    font-weight: $normal;
+    font-size: rem(10);
+    line-height: 1.8;
+    color: $white;
+}
+

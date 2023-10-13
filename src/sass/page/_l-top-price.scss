@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .l-top-price{
-    margin-top: rem(79);
+    margin-top: rem(87);
     @include mq("md") {
-        margin-top: rem(76);
+        margin-top: rem(85);
     }
 }

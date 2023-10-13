@@ -1,13 +1,7 @@
 @use "global" as *;
 
-.campaign-price{
-    padding: rem(17) rem(16) 0 rem(16);
-    @include mq("md") {
-        padding-top: rem(22);
-    }
-}
 
-.campaign-price__subtitle{
+.price-card__subtitle{
     font-size: rem(12);
     color: $blue;
     line-height: 1;
@@ -19,7 +13,7 @@
     }
 }
 
-.campaign-price__title{
+.price-card__title{
     font-weight: $medium;
     line-height: 1.1;
     font-size: rem(16);
@@ -30,7 +24,7 @@
     }
 }
 
-.campaign-price__about{
+.price-card__about{
     font-size: rem(14);
     line-height: 1;
     text-align: center;
@@ -45,7 +39,7 @@
     }
 }
 
-.campaign-price__body{
+.price-card__body{
     display: flex;
     align-items: center;
     margin-top: auto;
@@ -59,7 +53,7 @@
     }
 }
 
-.campaign-price__normal{
+.price-card__normal{
     font-family: $accent-font-family;
     font-weight: $bold;
     font-size: rem(20);
@@ -74,7 +68,7 @@
     }
 }
 
-.campaign-price__normal::before{
+.price-card__normal::before{
     position: absolute;
     content: "";
     border: solid rem(2) #C94800;
@@ -84,7 +78,7 @@
     transform: translateY(-52%);
 }
 
-.campaign-price__sale{
+.price-card__sale{
     font-family: $accent-font-family;
     font-weight: $bold;
     color: $blue;

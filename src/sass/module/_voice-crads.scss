@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.voice-cards{
+    @include mq("md") {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.voice-cards__item{
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-right: rem(40);
+    }
+}
+
+.voice-cards__item:first-child{
+    margin-top: 0;
+}
+
+.voice-cards__item:nth-child(2){
+    @include mq("md") {
+        margin-top: 0;
+    }
+}
+
+.voice-cards__item:nth-child(n + 3){
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.voice-cards__item:nth-child(2n){
+    @include mq("md") {
+        margin-right: 0;
+    }
+}

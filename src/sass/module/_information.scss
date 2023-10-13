@@ -3,7 +3,7 @@
 .information{
     background-color: #DDF0F1;
     padding-top: rem(83);
-    padding-bottom: rem(78);
+    padding-bottom: rem(80);
     @include mq("md") {
         padding-top: rem(99);
         padding-bottom: rem(101);
@@ -39,7 +39,9 @@
 
 
 .information__content{
+    margin-top: rem(27);
     @include mq("md") {
+        margin-top: 0;
         max-width: 45.5%;
         width: 100%;
     }

@@ -17,6 +17,20 @@
     }
 }
 
+.blog::after{
+    @include mq("md") {    
+        position: absolute;
+        content: "";
+        background-image: url(../images/common/fish_4.png);
+        top: 2.7%;
+        left: calc(50% - min(43.1vw, rem(620)));
+        max-width: rem(437);
+        width: 100%;
+        aspect-ratio: 437/201;
+        background-size: cover;
+    }
+}
+
 .blog__inner.inner{
     padding-left: rem(21);
     padding-right: rem(21);
@@ -52,13 +66,7 @@
 .blog__items{
     margin-top: rem(32);
     @include mq("md") {
-        max-width: 100%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
         margin-top: rem(84);
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 

@@ -8,7 +8,7 @@
     text-align: left;
     cursor: pointer;
     position: relative;
-    padding: rem(27) rem(10);
+    padding: rem(16) 0 rem(16) rem(40);
     color: $white;
     font-size: rem(14);
     margin-right: rem(7);
@@ -51,35 +51,28 @@
 }
 
 .button__text{
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translateY(-50%);
-    z-index: 1;
+    position: relative;
+    z-index: 10;
 }
 
-.button__arrow{
+.button__text::after{
     position: absolute;
-    display: inline-block;
-    width: 100%;
-    z-index: 1;
-    top: 37%;
-    right: 21%;
+    content: "";
+    background-image: url(../images/common/button_arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: rem(4);
     max-width: rem(40);
     width: 100%;
-    height: rem(8);
-    border-bottom: rem(1) solid $white;
-    border-right: rem(1) solid $white;
-    transform: skew(45deg);
-    @include mq("md") {
-        height: rem(7);
-        max-width: rem(40);
-        top: 42%;
-    }   
+    display: inline-block;
+    height: rem(10);
+    transition: .5s;
+    margin-left: rem(8.3);
 }
 
-
-.button:hover .button__arrow{
-    border-bottom: rem(1) solid $blue;
-    border-right: rem(1) solid $blue;
+.button:hover .button__text::after{
+    background-image: url(../images/common/button_arrow--green.png);
+    z-index: 10;
 }
+
